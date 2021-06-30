@@ -1,5 +1,23 @@
+<nav id="small-nav">
+  <div class="icon">
+    <img id="logo" src="assets/images/pisum-logo.png" alt="">
+    <img id="icon1" (click)="showList()" src="assets/images/menu_b.png" alt="">
+    <img id="icon2" (click)="hideList()" class="hide_icon" src="assets/images/cancel.png" alt="">
+  </div>
+  <div class="list_hide" id="list">
+    <ul>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Products</li>
+      <li>Certificates</li>
+      <li>Blogs</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+</nav>
+
 <nav class="flex" id="nav">
-  <div id="logo">
+  <div id="logos">
     <img src="assets/images/pisum-logo.png" alt="Icon">
   </div>
   <div>
@@ -28,6 +46,5 @@
       <li><a href="">Contact Us</a></li>
     </ul>
   </div>
-  <div></div>
 </nav>
 <app-home></app-home>

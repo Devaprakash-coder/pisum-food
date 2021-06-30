@@ -203,14 +203,7 @@ color: #444444;
     background: #f8f8f8;
     position: relative;
 }
-/* .our-product::before{
-    content: url(/./assets/images/title-shape.png);
-    position: absolute;
-    left: 50%;
-    top: 6px;
-    bottom: auto;
-    transform: translate(-50%, -100%);
-} */
+
 .our-product section{
     background: #f8f8f8;
     text-align: center;
@@ -251,6 +244,10 @@ color: #444444;
 .our-product .cards .box:hover{
     box-shadow: 0 0 25px rgb(0 0 0 / 25%);
     border-radius: 10px 10px 10px 10px;
+}
+.our-product .box .box-img img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
 }
 .choose-div{
     display: flex;
@@ -345,7 +342,6 @@ text-align: center;
 background-image: url("/assets/images/bg.jpg");
 }
 .Clients section{
-    background: #f8f8f8;
     text-align: center;
     padding: 50px;
 }
@@ -736,62 +732,207 @@ color: #8a8a8a;
     font-size: 25px;
 }
 
-@media screen and (max-width: 730px) {
-    .choose-div{
-        flex-direction: column;
+@media only screen and (max-width:480px){
 
-    }
-    .choose-div section{
-        width: 100%;
-    }
+
+.mall-slide{
+    height: 330px;
 }
-/* .mall-carousel-ind ul {
-    display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, .2);
+
+.prev,.next{
+    display: none;
+}
+
+.mall-slide .slid-content{
+    height: 185px !important;
+    top: 120px;
+}
+    .mall-show-slide img{
+    width: 100% !important;
+    height: 100% !important;
+    }
+
+.content-div-1 section{
+        padding: 0px;
+        padding-bottom: 20px;
+}
+.content-div-2{
+    padding-bottom: 40px;
+}
+.content-div-2 section{
+        padding: 0px;
+        padding-bottom: 40px;
+}
+.content-div-2 .cards .box{
+    margin-bottom: 20px;
+}
+.choose-heading h2{
+    margin-left: 0px;
+    font-size: 36px;
+}
+.choose-div{
+    flex-direction: column;
+    padding-left: 0px;
+
+}
+.choose-div section{
+    width: 100%;
+    padding: 0px;
+}
+.choose-div .img-div{
+    padding: 10px;
+}
+.choose-div .content-div{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.Clients .CYDA p{
+    width: 100%;
+    margin: 0;
+}
+#scroll{
+    right: 10;
+}
+.our-product .cards .box{
+    margin-bottom: 25px;
+    margin-right: 0px;
+}
+.our-product section{
+    padding-bottom: 0px;
+}
+.video{
+    height: 250px;
+    padding: 0px;
+    width: 100%;
+}
+.video iframe{
+    width: 100%;
+    height: 100%;
+}
+.indian-market .choose-div section{
+    padding: 0px;
+    width: 90%;
     border-radius: 10px;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.indian-market .choose-div .content-div{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding: 30px;
+    padding-top: 15px;
+}
+.indian-market .choose-div .img-div{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.our-clients .logo-section{
+    flex-direction: column;
+    align-items: center;
+}
+.logo-section img{
+    margin-bottom: 10px;
+}
+.mail-section{
+    padding: 15px;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    align-content: space-around;
+    height: 260px;
+}
+.mail-section input{
+    width: 260px;
+}
+.about{
+    flex-direction: column;
+    padding: 25px;
+}
+.about section{
+    margin-bottom: 20px;
+}
+.stay{
+    width: 100%;
+}
+.loc-head .con-div{
+    width: 50%;
+}
+.social-bar{
+    justify-content: space-around;
+    padding: 20px;
+}
+.footer p{
+    font-size: 10px;
 }
 
-.mall-carousel-ind li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 3px;
-    font-size: 14px;
-    background-color: #e2e2e2;
-    background-color: rgba(255, 255, 255, .5);
-    border-radius: 50%;
-    cursor: pointer;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
+
 }
 
+@media (min-width: 768px) and (max-width: 991px){
 
-  .mall-carousel-ind li.mall-this {
-      background-color: #fff;    
-      filter: alpha(opacity=100);
-      -moz-opacity: 1;
-      opacity: 1;
-      width: 30px;
-      border-radius: 14px;
-  } */
+.mall-slide .slid-content{
+  width: 100%;
+    height: 550px !important;
+    overflow: hidden;
+    top: 121px;
+    position: absolute;
+}
+.choose-div{
+    padding-left: 20px;
 
-  /* Fading animation */ 
-  /* .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+}
+.content-div-2{
+    
+    padding-bottom: 25px;
 
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  } */
+}
+.content-div-2 .cards .box{
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+.choose-heading h2{
+    font-size: 60px;
+    margin-left: 45px;
+}
+.choose-div section{
+    padding: 10px;
+    width: 100%;
+}
+.choose-div .content-div{
+    padding-right: 0px;
+}
+.our-product .cards .box{
+    margin-bottom: 30px;
+}
+.video{
+    height: 360px;
+    padding: 0px;
+    width: 100%;
+}
+.mail-section{
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 350px;
+}
+.indian-market .choose-div .img-div{
+    display: none;
+}
+.indian-market .choose-div section{
+    padding: 20px;
+}
+.indian-market .choose-div .content-div{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.about{
+    flex-wrap: wrap;
+}
+.about section{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
